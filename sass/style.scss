@@ -1,8 +1,9 @@
-$backgrounds_proyectos: "","","","","" 
+$backgrounds_proyectos: "bobinatesla_background.jpg","controlremoto_background.jpg","lucesneon_background.jpg","rayosx_background.jpg","wirelesslight_background.jpg" ;
 body{
     margin: 0;
     font-family: Arial;
 }
+
 .menu {
     background-color: #675c64;
     display: flex;
@@ -64,6 +65,7 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        gap: 1vh;
         li{
             font-weight: bold;
         }
@@ -83,7 +85,7 @@ body{
         list-style-type: none;
         display: flex;
         flex-direction: column;
-       
+       gap: 1vh;
         li{
             font-weight: bold;
             margin-top: 1vh;
@@ -93,17 +95,101 @@ body{
 }
 
 .proyectos-realizados{
-    background-color: whitesmoke;
+    background-color: lightslategray;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    
     div{
-        background-color: lavender;
-        height: 30vh;
+        height: 50vh;
         width: 100%;
+        position: relative;
+    }
+
+    .proyecto-realizado{
+        background-size: cover;
+        &__titulo{
+            color: white;
+            position: absolute;
+            bottom: 1vh;
+            left: 1vh;
+        }
+    }
+    .bobina-tesla{
+        background-image: url("../images/bobinatesla_background.jpg");
+    }
+
+    .iluminacion-inalambrica{
+        background-image: url("../images/wirelesslight_background.jpg");
+    }
+
+    .lucesneon{
+        background-image: url("../images/lucesneon_background.jpg");
+    }
+
+    .experimento-rayosx{
+        background-image: url("../images/rayosx_background.jpg");
+    }
+
+    .radiocontrol-remoto{
+        background-image: url("../images/controlremoto_background.jpg");
+    }
+
+    .turbinatesla{
+        background-image: url("../images/turbinatesla_background.jpg");
+    }
+}
+
+
+// Telefono landscape
+@media screen and (min-width: 600px) and (orientation: landscape){
+   
+    .proyectos-realizados{
+        background-color: lightslategray;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+        div{
+            height: 50vh;
+            width: 50%;
+        }
+    
+        .proyecto-realizado{
+            background-size: cover;
+            flex-grow: 1;
+            &__titulo{
+                color: white;
+                position: absolute;
+                bottom: 1vh;
+                left: 1vh;
+            }
+        }
     }
 }
 
 
 
+// Escritorio
+@media screen and (min-width: 1024px) and (orientation: landscape){
+    .proyectos-realizados{
+        background-color: lightslategray;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+        div{
+            height: 50vh;
+            width: 30%;
+        }
+    
+        .proyecto-realizado{
+            background-size: cover;
+            &__titulo{
+                color: white;
+                position: absolute;
+                bottom: 1vh;
+                left: 1vh;
+            }
+        }
+    }
+}
