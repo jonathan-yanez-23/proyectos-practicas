@@ -1,4 +1,8 @@
 
+body{
+    margin: 0;
+    font-family: Arial;
+}
 .menu {
     background-color: #675c64;
     display: flex;
@@ -33,9 +37,9 @@
         height: 100%;
         &__cita{
             position: absolute;
-            left: 1vh;
+            left: 2vh;
             width: 50%;
-            bottom: 1vh;
+            bottom: 2vh;
             color: white;
             ::before{
                 content: open-quote;
@@ -55,25 +59,50 @@
     flex-direction: column;
     align-items: center;
     background-color: whitesmoke;
-    
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        li{
+            font-weight: bold;
+        }
+    }
+
 }
 
 .cv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: lightgray;
+    position: relative;
+    &__titulo{
+        width: fit-content;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    ul{
+        list-style-type: none;
+        
+        li{
+            font-weight: bold;
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+        }
+    }
 }
 
 .proyectos-realizados{
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     div{
         background-color: lavender;
-        
-        
+        height: 30vh;
+        width: 100%;
     }
 }
 
+
+
+$backgrounds_proyectos: "","","","","" 

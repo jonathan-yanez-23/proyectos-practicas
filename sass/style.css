@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
 .menu {
   background-color: #675c64;
   display: -webkit-box;
@@ -51,9 +56,9 @@
 
 .sobre-mi .banner-tesla__cita {
   position: absolute;
-  left: 1vh;
+  left: 2vh;
   width: 50%;
-  bottom: 1vh;
+  bottom: 2vh;
   color: white;
 }
 
@@ -81,7 +86,8 @@
   background-color: whitesmoke;
 }
 
-.cv {
+.estudios ul {
+  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,13 +95,40 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.estudios ul li {
+  font-weight: bold;
+}
+
+.cv {
   background-color: lightgray;
+  position: relative;
+}
+
+.cv__titulo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.cv ul {
+  list-style-type: none;
+}
+
+.cv ul li {
+  font-weight: bold;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
 
 .proyectos-realizados {
+  background-color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,5 +146,7 @@
 
 .proyectos-realizados div {
   background-color: lavender;
+  height: 30vh;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
