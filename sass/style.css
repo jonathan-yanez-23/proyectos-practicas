@@ -36,4 +36,90 @@
 .menu .logotesla {
   height: 2em;
 }
+
+.sobre-mi {
+  width: auto;
+  height: 30vh;
+  position: relative;
+}
+
+.sobre-mi .banner-tesla {
+  background-image: url("../images/nikola_tesla_background.jpg");
+  background-size: cover;
+  height: 100%;
+}
+
+.sobre-mi .banner-tesla__cita {
+  position: absolute;
+  left: 1vh;
+  width: 50%;
+  bottom: 1vh;
+  color: white;
+}
+
+.sobre-mi .banner-tesla__cita ::before {
+  content: open-quote;
+  color: white;
+}
+
+.sobre-mi .banner-tesla__cita ::after {
+  content: close-quote;
+  color: white;
+}
+
+.estudios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: whitesmoke;
+}
+
+.estudios ul {
+  list-style: none;
+}
+
+.estudios li {
+  content: "camara";
+}
+
+.cv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: lightgray;
+}
+
+.proyectos-realizados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.proyectos-realizados div {
+  background-color: lavender;
+}
 /*# sourceMappingURL=style.css.map */

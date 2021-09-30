@@ -1,5 +1,3 @@
-@import "components/cv";
-
 
 .menu {
     background-color: #675c64;
@@ -24,4 +22,58 @@
     }
 }
 
+.sobre-mi{
+    width: auto;
+    height: 30vh;
+    position: relative;
+    .banner-tesla{
+        background-image: url("../images/nikola_tesla_background.jpg");
+        background-size: cover;
+        
+        height: 100%;
+        &__cita{
+            position: absolute;
+            left: 1vh;
+            width: 50%;
+            bottom: 1vh;
+            color: white;
+            ::before{
+                content: open-quote;
+                color: white;
+            }
+            ::after{
+                content: close-quote;
+                color: white;
+            }
+        }
+    }
+
+}
+
+.estudios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    
+}
+
+.cv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.proyectos-realizados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    div{
+        background-color: lavender;
+        
+        
+    }
+}
 
