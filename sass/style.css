@@ -81,14 +81,6 @@
   background-color: whitesmoke;
 }
 
-.estudios ul {
-  list-style: none;
-}
-
-.estudios li {
-  content: "camara";
-}
-
 .cv {
   display: -webkit-box;
   display: -ms-flexbox;
