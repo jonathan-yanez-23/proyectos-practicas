@@ -94,6 +94,18 @@ body{
     }
 }
 
+
+
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    background-color: lightslategray;
+    &__titulo{
+        color: white;
+        align-self: center;
+    }
+}
+
 .proyectos-realizados{
     background-color: lightslategray;
     display: flex;
@@ -142,9 +154,7 @@ body{
 
 // Telefono landscape
 @media screen and (min-width: 600px) and (orientation: landscape){
-   
     .proyectos-realizados{
-        background-color: lightslategray;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
